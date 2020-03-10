@@ -1,0 +1,18 @@
+CREATE TABLE likes (
+  media_id INT UNSIGNED NOT NULL,
+  user_id INT UNSIGNED NOT NULL,
+  is_like BOOLEAN,
+  is_dislike BOOLEAN,
+  recorded_at DATETIME DEFAULT NOW(),
+  PRIMARY KEY (media_id, user_id)
+);
+
+CREATE TABLE posts (
+  post_id INT UNSIGNED NOT NULL,
+  user_id INT UNSIGNED NOT NULL,
+  head VARCHAR(100) NOT NULL,
+  body TEXT NOT NULL,
+  media_id INT UNSIGNED,
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+  updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
