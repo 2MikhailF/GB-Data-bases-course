@@ -50,4 +50,16 @@ mysqldump --where=" 1 limit 100" -u root -p mysql help_keyword > mysql_help_keyw
 
 */
 
-			
+		
+-- Комментарии преподавтеля:
+
+/*
+ * В качестве поля id в таблицах удобно использовать псевдо тип SERIAL (псевдоним для типа BIGINT UNSIGNED NOT NULL AUTO_INCREMENT UNIQUE).
+Для информации: допустимые расположения файла my.cnf (или my.ini для Windows) описаны на странице официальной документации: https://dev.mysql.com/doc/refman/8.0/en/option-files.html
+Небольшая русскоязычная шпаргалка по утилите mysqldump: https://mysqlru.com/mysql-database-administration/client-side-scripts/mysqldump.html.
+
+*/
+
+
+ */
+
